@@ -371,7 +371,7 @@ NAN_METHOD(shavite3) {
 
 NAN_METHOD(cryptonight) {
     bool fast = false;
-							
+	uint32_t cn_variant = 0;						
 
     if (info.Length() < 1)
         return except("You must provide one argument.");
